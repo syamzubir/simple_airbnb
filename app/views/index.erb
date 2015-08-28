@@ -1,23 +1,42 @@
 <div class="container">
-  <h1>Welcome to Sinatra!</h1>
-  <p>Hello, world!</p>
 
-  <table>
-    <tr>
-      <th>File Description</th>
-      <th>File Location</th>
-    </tr>
-    <tr>
-      <td>This view file</td>
-      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The layout file</td>
-      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The current controller</td>
-      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-  </table>
+<div class="page-header">
+  <h1><center><a href="/">Simple AirBnB</a></center></h1>
 </div>
+
+<div class="text-center">
+  <p><center><center>Welcome!</center></p>
+
+<form action="sign_in_page" method="post">
+    <tr>
+      <h2>Login</h2>
+    </tr>
+        Username:<br>
+        <input type="text" name="username">
+        <br>
+        Password:<br>
+        <input type="text" name="password">
+        <br>
+        <input type="submit" value="Sign in!">
+  </form>
+
+  <form action="sign_up_page" method="post">
+    <tr>
+      <h2>Sign Up!</h2>
+    </tr>
+        Email:<br>
+        <input type="text" name="email">
+        <br>
+        Username:<br>
+        <input type="text" name="username">
+        <br>
+        Password:<br>
+        <input type="text" name="password">
+        <br>
+        <input type="submit" value="Sign up!">
+  </form>
+
+
+</div>
+</div>
+
